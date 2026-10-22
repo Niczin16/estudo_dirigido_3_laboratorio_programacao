@@ -22,10 +22,22 @@ CREATE TABLE FUNCIONARIOS(
 );
 
 # Exemplo de autoincrmente
+
 CREATE TABLE FUNCIONARIOS(
     ID INTEGER AUTO_INCREMENT PRIMARY KEY,
     NOME VARCHAR(100)
 );
+
+OU 
+ALTER TABLE FUNCIONARIOS MODIFY ID INTEGER AUTO_INCREMENT PRIMARY KEY;
+
+#insert
+
+INSERT INTO FUNCIONARIOS (NOME, CARGO, DATA_CONTRATACAO, SALARIO) 
+VALUES ('NICOLAS', 'DESENVOLVEDOR', '2005-07-05', 5000.00);
+
+INSERT INTO FUNCIONARIOS (NOME, CARGO, DATA_CONTRATACAO, SALARIO)
+VALUES ('PEDRO', 'FINANCEIRO', '2007-07-05', 2000.00);
 
 Este guia descreve como corrigir o erro de carregamento do driver JDBC ("No suitable driver found") substituindo o arquivo compactado `.zip` pelo arquivo executável `.jar` correto nas bibliotecas do projeto.
 
