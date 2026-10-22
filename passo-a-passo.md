@@ -1,6 +1,8 @@
 # Passo a Passo: Configuração do Driver MySQL no Apache NetBeans
 
 [Importante fazer antes de configurar a conexão com o banco de dados]
+# Abrir o mySql
+C:\xampp\mysql\bin>mysql -u root -p -P 3307
 
 Este guia descreve como corrigir o erro de carregamento do driver JDBC ("No suitable driver found") substituindo o arquivo compactado `.zip` pelo arquivo executável `.jar` correto nas bibliotecas do projeto.
 
